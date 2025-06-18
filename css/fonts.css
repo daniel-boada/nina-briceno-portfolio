@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Museo_300;
+  src: url("./../fonts/Museo300-Regular.otf")
+}
+
+@font-face {
+  font-family: Museo_700;
+  src: url("./../fonts/Museo700-Regular.otf");
+}

@@ -1,0 +1,44 @@
+@import url(variables.css);
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background-color: var(--pink);
+  flex-grow: 1;
+  border-radius: 50px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+
+  .pattern {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    opacity: 20%;
+  }
+
+  .dot-container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+
+    .dot {
+      z-index: 1;
+      height: 380px;
+      width: 380px;
+      border-radius: 50%;
+      border: 15px solid white;
+    }
+
+    .logo {
+      width: 450px;
+    }
+  }
+}
