@@ -1,6 +1,6 @@
 @import url(variables.css);
 
-.hero {
+.headshot-container {
 	height: 500px;
 	width: 100%;
 	background-color: var(--pink);
@@ -12,14 +12,14 @@
 	align-items: center;
 	overflow: hidden;
 
-	.pattern {
+	.headshot-pattern {
 		position: relative;
 		object-fit: cover;
 		width: 100%;
 		opacity: 20%;
 	}
 
-	.dot-container {
+	.headshot-inner {
 		position: absolute;
 		z-index: 1;
 		display: flex;
@@ -29,7 +29,7 @@
 		padding: 100px;
 		gap: 100px;
 
-		.dot {
+		.headshot-image {
 			z-index: 1;
 			height: 380px;
 			width: 380px;
@@ -37,7 +37,7 @@
 			border: 15px solid white;
 		}
 
-		.logo {
+		.nina-briceno-logo {
 			width: 450px;
 		}
 	}
