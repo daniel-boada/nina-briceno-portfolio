@@ -42,13 +42,13 @@ main {
     padding: 2rem;
     background-color: white;
     border-radius: 3rem;
-    margin: 6.5rem 1rem 1rem;
+    margin: 6.5rem 0;
 
     @media (max-width: 1400px) {
         min-width: 0;
-        width: 100%;
+        width: calc(100% - 4rem);
+        padding: 1rem;
     }
-    
 }
 
 h2,
@@ -84,6 +84,10 @@ a {
         place-self: center;
         aspect-ratio: 16/9;
         object-fit: cover;
+
+        @media (max-width: 1400px) {
+            width: 100%;
+        }
     }
 
     .motion-section__video {
@@ -93,5 +97,6 @@ a {
     .motion-section__subheader {
         padding-top: 1rem;
         text-align: left;
+        font-size: 2rem;
     }
 }

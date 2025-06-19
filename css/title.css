@@ -12,33 +12,57 @@
 	align-items: center;
 	overflow: hidden;
 
-	.headshot-pattern {
-		position: relative;
-		object-fit: cover;
-		width: 100%;
-		opacity: 20%;
-	}
-
 	.headshot-inner {
 		position: absolute;
 		z-index: 1;
 		display: flex;
 		align-content: center;
 		justify-content: flex-start;
-		align-items: center;
-		padding: 100px;
-		gap: 100px;
+		gap: 10rem;
+		place-self: anchor-center;
+		align-self: center;
 
 		.headshot-image {
 			z-index: 1;
-			height: 380px;
-			width: 380px;
+			width: 24rem;
+			max-width: 24rem;
 			border-radius: 50%;
 			border: 1rem solid white;
+
+			@media (max-width: 1400px) {
+				width: 40%;
+			}
 		}
 
 		.nina-briceno-logo {
 			width: 28rem;
+			max-width: 28rem;
+			padding-right: 6rem;
+
+			@media (max-width: 1400px) {
+				width: 40%;
+				padding-right: 0;
+			}
+		}
+
+		@media (max-width: 1400px) {
+			gap: 5%;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+
+	.headshot-pattern {
+		position: relative;
+		object-fit: cover;
+		width: 100%;
+		opacity: 20%;
+
+		@media (max-width: 1400px) {
+			height: 100%;
+			width: 100%;
+			scale: 1.1;
+			left: 5%;
 		}
 	}
 }
@@ -49,12 +73,16 @@
 	color: white;
 	border-radius: 2rem;
 	justify-content: space-between;
-    align-items: center;
+	align-items: center;
 	padding: 2rem 4rem;
+	gap: 2rem;
 
 	.title {
 		font-size: 4rem;
 		margin: 0;
 	}
-}
 
+	@media (max-width: 1400px) {
+		padding: 1rem 2rem;
+	}
+}

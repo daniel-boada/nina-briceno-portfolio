@@ -77,7 +77,8 @@
 		align-items: center;
 		align-content: center;
 		padding-top: 2rem;
-		font-size: 24px;
+		padding-bottom: 4rem;
+		font-size: 1.5rem;
 		color: var(--darkblue);
 		font-family: Museo_300;
 	}
