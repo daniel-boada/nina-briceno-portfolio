@@ -5,9 +5,9 @@
 	width: 100%;
 	background-color: var(--pink);
 	flex-grow: 1;
-	border-radius: 50px;
+	border-radius: 3rem;
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 2rem;
 	justify-content: flex-start;
 	align-items: center;
 	overflow: hidden;
@@ -34,11 +34,11 @@
 			height: 380px;
 			width: 380px;
 			border-radius: 50%;
-			border: 15px solid white;
+			border: 1rem solid white;
 		}
 
 		.nina-briceno-logo {
-			width: 450px;
+			width: 28rem;
 		}
 	}
 }
