@@ -1,0 +1,60 @@
+@import url(variables.css);
+
+.headshot-container {
+	height: 500px;
+	width: 100%;
+	background-color: var(--pink);
+	flex-grow: 1;
+	border-radius: 50px;
+	display: flex;
+	margin-bottom: 30px;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+
+	.headshot-pattern {
+		position: relative;
+		object-fit: cover;
+		width: 100%;
+		opacity: 20%;
+	}
+
+	.headshot-inner {
+		position: absolute;
+		z-index: 1;
+		display: flex;
+		align-content: center;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 100px;
+		gap: 100px;
+
+		.headshot-image {
+			z-index: 1;
+			height: 380px;
+			width: 380px;
+			border-radius: 50%;
+			border: 15px solid white;
+		}
+
+		.nina-briceno-logo {
+			width: 450px;
+		}
+	}
+}
+
+.title-section {
+	display: flex;
+	background-color: var(--pink);
+	color: white;
+	border-radius: 2rem;
+	justify-content: space-between;
+    align-items: center;
+	padding: 2rem 4rem;
+
+	.title {
+		font-size: 4rem;
+		margin: 0;
+	}
+}
+
