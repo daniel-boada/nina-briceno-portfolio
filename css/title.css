@@ -19,7 +19,7 @@
 		align-content: center;
 		justify-content: flex-start;
 		gap: 10rem;
-		place-self: anchor-center;
+		position-area: center;		
 		align-self: center;
 
 		.headshot-image {
