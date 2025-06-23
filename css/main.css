@@ -40,7 +40,7 @@ main {
     max-width: 1300px;
     min-width: 1300px;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--lightpink);
     border-radius: 3rem;
     margin: 6.5rem 0;
 
@@ -76,14 +76,14 @@ a {
 
 .motion-section {
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 
     .motion-section__video-container {
-        padding-top: 1rem;
-        width: 80%;
+        background-color: white;
+        width: 100%;
         place-self: center;
-        aspect-ratio: 16/9;
         object-fit: cover;
+        border-radius: 3rem;
 
         @media (max-width: 1400px) {
             width: 100%;
@@ -92,11 +92,17 @@ a {
 
     .motion-section__video {
         padding-top: 1rem;
+        padding: 2rem 4rem 4rem;
+        width: calc(100% - 8rem);
     }
 
     .motion-section__subheader {
-        padding-top: 1rem;
-        text-align: left;
-        font-size: 2rem;
+        background-color: var(--blue);
+        padding: 0.5rem;
+        border-radius: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 0 0;
     }
 }

@@ -1,0 +1,184 @@
+.news-section {
+    background-color: white;
+    border-radius: 2rem;
+
+    .news-section__title {
+        background-color: var(--blue);
+        padding: 0.5rem;
+        border-radius: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .news-section__image-container {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+
+        .news-section__image {
+            width: 45%;
+
+            @media (max-width: 1400px) {
+                width: 100%;
+            }
+        }
+
+        .news-section__text-container {
+            width: 55%;
+
+            .news-section__subheader {
+                font-weight: 700;
+                font-size: 2rem;
+                color: var(--darkblue);
+            }
+
+            .news-section__text {
+                color: var(--darkblue);
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 1400px) {
+                width: unset;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            flex-direction: column;
+            width: unset;
+        }
+    }
+
+    .news-section__more-news {
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+
+        .news-section__more-news-title {
+            background-color: var(--pink);
+            padding: 0.5rem 10rem;
+            border-radius: 4rem;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            margin: 2rem 0;
+            width: fit-content;
+            place-self: center;
+        }
+
+        .news-section__more-news-image {
+            display: flex;
+            padding: 0;
+
+            @media (max-width: 1400px) {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        .news-section__more-news-text {
+            font-size: 1.5rem;
+            color: var(--darkblue);
+        }
+    }
+}
+
+.print-section {
+    background-color: white;
+    border-radius: 2rem;
+
+    .print-section__title {
+        background-color: var(--blue);
+        padding: 0.5rem;
+        border-radius: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .print-section__image-container {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+
+        .print-section__image {
+            width: 45%;
+
+            @media (max-width: 1400px) {
+                width: 100%;
+            }
+        }
+
+        .print-section__text-container {
+            width: 55%;
+
+            .print-section__subheader {
+                font-weight: 700;
+                font-size: 2rem;
+                color: var(--darkblue);
+            }
+
+            .print-section__text {
+                color: var(--darkblue);
+                font-size: 1.5rem;
+                flex-grow: 1;
+            }
+
+            @media (max-width: 1400px) {
+                width: unset;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            flex-direction: column;
+            width: unset;
+        }
+    }
+
+    .print-section__more-print {
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+
+        .print-section__more-print-title {
+            background-color: var(--pink);
+            padding: 0.5rem 10rem;
+            border-radius: 4rem;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            margin: 2rem 0;
+            width: fit-content;
+            place-self: center;
+        }
+
+        .print-section__more-print-image-row {
+            display: flex;
+            padding: 0;
+            gap: 1rem;
+            padding-top: 1rem;
+
+            @media (max-width: 1400px) {
+                flex-direction: column;
+                width: unset;
+            }
+        }
+
+        .print-section__more-print-image-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            gap: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .print-section__more-print-text {
+            font-size: 1.5rem;
+            color: var(--darkblue);
+        }
+    }
+}
