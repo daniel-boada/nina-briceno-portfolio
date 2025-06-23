@@ -2,17 +2,15 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/title.css" />
-	<link rel="stylesheet" href="css/about.css" />
-	<link rel="stylesheet" href="css/projects.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/home.css" />
 	<title>Nina Portfolio</title>
 </head>
 
 <body>
 	<header>
 		<div class="header-inner">
-			<a class="header-link" href="index.html">Home</a>
+			<a class="header-link" href="/">Home</a>
 			<a class="header-link" href="illustrations.html">Illustrations</a>
 			<a class="header-link" href="design.html">Design</a>
 			<a class="header-link" href="motion.html">Motion</a>
@@ -21,28 +19,39 @@
 	<main>
 		<section class="headshot-container">
 			<div class="headshot-inner">
-				<img class="headshot-image" src="images/nina-briceno-headshot.png" />
-				<img class="nina-briceno-logo" src="images/nina-briceno-logo.svg" width="215" />
+				<img class="headshot-image" src="assets/nina-briceno-headshot.png" />
+				<div>
+					<img class="nina-briceno-logo" src="assets/nina-briceno-logo.svg" width="215" />
+					<div class="headshot-container__buttons">
+						<a class="headshot-container__linkedin" href="" >
+							<img class="logo" src="assets/linkedin-logo-white.png" />
+						</a>
+						<a class="headshot-container__resume" href="">
+							My Resume
+						</a>
+					</div>
+
+				</div>
 			</div>
-			<img class="headshot-pattern" src="images/background-pattern.svg" />
+			<img class="headshot-pattern" src="assets/background-pattern.svg" />
 		</section>
 		<div class="about">
 			<section class="apps">
 				<h2 class="app-title">I WORK WITH</h2>
 				<div class="logos-row">
-					<img class="logo" src="images/icons/after-effects-icon.svg" />
-					<img class="logo" src="images/icons/audition-icon.svg" />
-					<img class="logo" src="images/icons/canva-icon.svg" />
+					<img class="logo" src="assets/icons/after-effects-icon.svg" />
+					<img class="logo" src="assets/icons/audition-icon.svg" />
+					<img class="logo" src="assets/icons/canva-icon.svg" />
 				</div>
 				<div class="logos-row">
-					<img class="logo" src="images/icons/figma-icon.svg" />
-					<img class="logo" src="images/icons/illustator-icon.svg" />
-					<img class="logo" src="images/icons/indesign-icon.svg" />
+					<img class="logo" src="assets/icons/figma-icon.svg" />
+					<img class="logo" src="assets/icons/illustator-icon.svg" />
+					<img class="logo" src="assets/icons/indesign-icon.svg" />
 				</div>
 				<div class="logos-row">
-					<img class="logo" src="images/icons/photoshop-icon.svg" />
-					<img class="logo" src="images/icons/premiere-pro-icon.svg" />
-					<img class="logo" src="images/icons/procreate-icon.svg" />
+					<img class="logo" src="assets/icons/photoshop-icon.svg" />
+					<img class="logo" src="assets/icons/premiere-pro-icon.svg" />
+					<img class="logo" src="assets/icons/procreate-icon.svg" />
 				</div>
 			</section>
 			<section class="intro">
@@ -67,32 +76,35 @@
 				<div class="projects-section__projects">
 					<a class="projects-section__project" href="design.html">
 						<h3 class="projects-section__title">Design</h3>
-						<img class="projects-section__photo" src="images/poster.png" />
+						<img class="projects-section__photo" src="assets/poster.png" />
 					</a>
 					<a class="projects-section__project" href="illustrations.html">
 						<h3 class="projects-section__title">Illustrations</h3>
-						<img class="projects-section__photo" src="images/illustrations/illustration7.jpg" />
+						<img class="projects-section__photo" src="assets/illustrations/illustration7.jpg" />
 					</a>
 					<a class="projects-section__project" href="motion.html">
 						<h3 class="projects-section__title">Motion</h3>
-						<img class="projects-section__photo" src="images/social-media-video2-gif.png">
+						<img class="projects-section__photo" src="assets/social-media-video2-gif.png">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="contact-me-section">
-			<h2 class="contact-me-section__header">Contact Me!</h2>
-			<p>ninabriceno1998@gmail.com</p>
-			<div>
-				<a href="">
-					<img class="logo" src="images/icons/procreate-icon.svg" />
+		<section class="contact-me-section">
+			<h2 class="contact-me-section__title">Contact Me!</h2>
+			<p class="contact-me-section__email">ninabriceno1998@gmail.com</p>
+			<div class="contact-me-section__icons">
+				<a href="" class="contact-me-section__icon">
+					<img class="" src="assets/instagram-logo-white.png" />
 				</a>
-				<a href="">
-					<img class="logo" src="images/icons/procreate-icon.svg" />
+				<a href="" class="contact-me-section__icon">
+					<img src="assets/linkedin-logo-white.png" />
+				</a>
+				<a class="contact-me-section__resume" href="">
+					My Resume
 				</a>
 			</div>
-		</section> -->
+		</section>
 	</main>
 </body>
 
