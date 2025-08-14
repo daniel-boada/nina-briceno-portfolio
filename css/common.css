@@ -75,21 +75,67 @@ a {
 }
 
 .title-section {
-	display: flex;
-	background-color: var(--pink);
-	color: white;
-	border-radius: 2rem;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem 4rem;
-	gap: 2rem;
+    display: flex;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
 
-	.title {
-		font-size: 4rem;
-		margin: 0;
-	}
+    .title {
+        font-size: 4rem;
+        margin: 0;
+    }
 
-	@media (max-width: 1400px) {
-		padding: 1rem 2rem;
-	}
+    @media (max-width: 1400px) {
+        padding: 1rem 2rem;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    /* background-color: var(--pink); */
+    background-color: white;
+    color: var(--darkblue);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    transition: 0.25s;
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }

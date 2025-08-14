@@ -153,7 +153,6 @@
         align-items: center;
         gap: 2rem;
         padding-bottom: 2rem;
-        width: 100%;
 
         @media (max-width: 1400px) {
             padding-bottom: 4rem;
